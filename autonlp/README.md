@@ -1,8 +1,8 @@
 ---
 title: AutoNLP
-first-color: 'hsl(78, 100%, 20%)'
-second-color: 'hsl(78, 100%, 70%)'
-third-color: 'hsl(78, 100%, 90%)'
+firstColor: 'hsl(78, 100%, 20%)'
+secondColor: 'hsl(78, 100%, 70%)'
+thirdColor: 'hsl(78, 100%, 90%)'
 ---
 
 <div class="card">
