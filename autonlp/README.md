@@ -1,5 +1,6 @@
 ---
 title: AutoNLP
+color: green
 ---
 
 <div class="card">
