@@ -1,6 +1,8 @@
 ---
 title: Markdown
-color: blue
+first-color: 'hsl(124, 100%, 20%)'
+second-color: 'hsl(124, 100%, 70%)'
+third-color: 'hsl(124, 100%, 90%)'
 ---
 
 
