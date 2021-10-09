@@ -9,10 +9,9 @@ thirdColor: 'hsl(124, 100%, 95%)'
 <div class="card">
 
 # Markdown
-
-<div class="description">
+   
 Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists.
-</div>
+
 </div>
 <div class="card">
 
