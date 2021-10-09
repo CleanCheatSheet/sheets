@@ -1,6 +1,6 @@
 ---
-title: Markdown
-author: James Carron
+title: Git
+author: education.github.com
 firstColor: 'hsl(124, 100%, 20%)'
 secondColor: 'hsl(124, 100%, 90%)'
 thirdColor: 'hsl(124, 100%, 95%)'
@@ -9,82 +9,59 @@ thirdColor: 'hsl(124, 100%, 95%)'
 
 <div class="card">
 
-# Markdown
+# Git
    
-Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists.
+Git  is  the  free  and  open  source  distributed  version  control  system  that's  responsible  for  everything  GitHub related that happens locally on your computer. This cheat sheet features the most important and commonly used Git commands for easy reference.
 
 </div>
 <div class="card">
 
-## Headers 
+# Setup
+   
+## Configuring user information used across all local repositories
 
-```markdown
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-```
-## Emphasis
+```git config --global user.name “[firstname lastname]”```
+set a name that is identifiable for credit when review version history
+   
+```git config --global user.email “[valid-email]”```
+set an email address that will be associated with each history marker
+   
+```git config --global color.ui auto ```
+set automatic command line coloring for Git for easy reviewing
 
-```markdown
-*This text will be italic*
-_This will also be italic_
-**This text will be bold**
-__This will also be bold__
-*You **can** combine them*
-```
 
-</div>
-<div class="card">
+# Setup & Init
 
-## Lists
+## Configuring user information, initializing and cloning repositories
+   
+```git init```
+initialize an existing directory as a Git repository
+   
+```git clone [url]```
+retrieve an entire repository from a hosted location via URL
 
-Unordered
-
-```markdown
-* Item 1
-* Item 2
-    * Item 2a
-    * Item 2b
-```
-
-Ordered
-
-```markdown
-1. Item 1
-2. Item 2
-3. Item 3
-    * Item 3a
-    * Item 3b
-```
-
-</div>
-<div class="card">
-
-## Images 
-
-```markdown
-![Github Logo](/images/logo.png)
-
-Format: ![Alt Text](url)
-```
-
-## Links
-
-```markdown
-http://github.com - automatic!
-[Github](http://github.com)
-```
+# Stage & Snapshot
+   
+## Working with snapshots and the Git staging area
+   
+```git status```
+show modified files in working directory, staged for your next commit
+   
+```git add [file]```
+add a file as it looks now to your next commit (stage)
+   
+```git reset [file]```
+unstage a file while retaining the changes in working directory
+   
+```git diff```
+diff of what is changed but not staged
+   
+```git diff --staged```
+diff of what is staged but not yet committed
+   
+```git commit -m “[descriptive message]”```
+commit your staged content as a new commit snapshot
 
 </div>
 <div class="card">
 
-## Blockquotes
-
-```markdown
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-```
-
-![rendering](1.png)
