@@ -52,6 +52,8 @@ git clone [url]
 
 retrieve an entire repository from a hosted location via URL
 
++++
+
 ## Stage & Snapshot
 
 **Working with snapshots and the Git staging area**
