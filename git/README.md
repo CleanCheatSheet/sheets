@@ -18,7 +18,7 @@ Git  is  the  free  and  open  source  distributed  version  control  system  th
 
 ## Setup
    
-### Configuring user information used across all local repositories
+**Configuring user information used across all local repositories**
 
 ```git config --global user.name “[firstname lastname]”```
 set a name that is identifiable for credit when review version history
@@ -32,7 +32,7 @@ set automatic command line coloring for Git for easy reviewing
 
 ## Setup & Init
 
-### Configuring user information, initializing and cloning repositories
+**Configuring user information, initializing and cloning repositories**
    
 ```git init```
 initialize an existing directory as a Git repository
@@ -42,7 +42,7 @@ retrieve an entire repository from a hosted location via URL
 
 ## Stage & Snapshot
    
-### Working with snapshots and the Git staging area
+**Working with snapshots and the Git staging area**
    
 ```git status```
 show modified files in working directory, staged for your next commit
