@@ -1,8 +1,8 @@
 ---
 title: Markdown
 author: James Carron
-firstColor: 'hsl(124, 100%, 20%)'
-secondColor: 'hsl(124, 100%, 90%)'
+firstColor: '#33AFED'
+secondColor: '#FFC0CB'
 thirdColor: 'hsl(124, 100%, 95%)'
 ---
 
