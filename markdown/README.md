@@ -1,50 +1,48 @@
 ---
 title: Markdown
 author: James Carron
-firstColor: '#33AFED'
-secondColor: '#FFC0CB'
-thirdColor: 'hsl(124, 100%, 95%)'
+firstColor: "#33AFED"
+secondColor: "#FFC0CB"
+thirdColor: "hsl(124, 100%, 95%)"
 ---
 
-
-<div class="card">
-
 # Markdown
-   
+
 Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists.
 
-</div>
-<div class="card">
++++
 
-## Headers 
+## Headers
 
 ```markdown
 # This is an <h1> tag
+
 ## This is an <h2> tag
+
 ###### This is an <h6> tag
 ```
+
 ## Emphasis
 
 ```markdown
-*This text will be italic*
+_This text will be italic_
 _This will also be italic_
 **This text will be bold**
-__This will also be bold__
-*You **can** combine them*
+**This will also be bold**
+_You **can** combine them_
 ```
 
-</div>
-<div class="card">
++++
 
 ## Lists
 
 Unordered
 
 ```markdown
-* Item 1
-* Item 2
-    * Item 2a
-    * Item 2b
+- Item 1
+- Item 2
+  - Item 2a
+  - Item 2b
 ```
 
 Ordered
@@ -53,14 +51,13 @@ Ordered
 1. Item 1
 2. Item 2
 3. Item 3
-    * Item 3a
-    * Item 3b
+   - Item 3a
+   - Item 3b
 ```
 
-</div>
-<div class="card">
++++
 
-## Images 
+## Images
 
 ```markdown
 ![Github Logo](/images/logo.png)
@@ -75,8 +72,7 @@ http://github.com - automatic!
 [Github](http://github.com)
 ```
 
-</div>
-<div class="card">
++++
 
 ## Blockquotes
 

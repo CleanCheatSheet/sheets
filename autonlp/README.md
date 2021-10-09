@@ -1,25 +1,22 @@
 ---
 title: AutoNLP
-firstColor: '#5C3936'
-secondColor: '#D9BDB9'
-thirdColor: '#D9C2C6'
+firstColor: "#5C3936"
+secondColor: "#D9BDB9"
+thirdColor: "#D9C2C6"
 ---
-
-<div class="card">
 
 # 🤗 AutoNLP
 
 AutoNLP: faster and easier training and deployments of SOTA NLP models
 
-</div>
-<div class="card">
++++
 
 ## Installation
 
 You can Install AutoNLP python package via PIP. Please note you will need python >= 3.7 for AutoNLP to work properly.
 
     pip install autonlp
-    
+
 Please make sure that you have git lfs installed. Check out the instructions here: https://github.com/git-lfs/git-lfs/wiki/Installation
 
 ## Quick start - in the terminal
@@ -29,8 +26,7 @@ Please take a look at [AutoNLP Documentation](https://huggingface.co/docs/autonl
 Note:
 AutoNLP is currently in beta release. To participate in the beta, just go to https://huggingface.co/autonlp and apply 🤗
 
-</div>
-<div class="card">
++++
 
 First, create a project:
 
@@ -40,6 +36,7 @@ autonlp create_project --name sentiment_detection --language en --task binary_cl
 ```
 
 Upload files and start the training. You need a training and a validation split. Only CSV files are supported at the moment.
+
 ```bash
 # Train split
 autonlp upload --project sentiment_detection --split train \
@@ -52,11 +49,13 @@ autonlp upload --project sentiment_detection --split valid \
 ```
 
 Once the files are uploaded, you can start training the model:
+
 ```bash
 autonlp train --project sentiment_detection
 ```
 
 Monitor the progress of your project.
+
 ```bash
 # Project progress
 autonlp project_info --name sentiment_detection
@@ -64,12 +63,12 @@ autonlp project_info --name sentiment_detection
 autonlp metrics --project PROJECT_ID
 ```
 
-</div>
-<div class="card">
++++
 
 ## Quick start - Python API
 
 Setting up:
+
 ```python
 from autonlp import AutoNLP
 client = AutoNLP()
@@ -77,6 +76,7 @@ client.login(token="YOUR_HUGGING_FACE_API_TOKEN")
 ```
 
 Creating a project and uploading files to it:
+
 ```python
 project = client.create_project(name="sentiment_detection", task="binary_classification", language="en", max_models=5)
 project.upload(
@@ -91,18 +91,19 @@ project.upload(
 ```
 
 Start the training of your models:
+
 ```python
 project.train()
 ```
 
 To monitor the progress of your training:
+
 ```python
 project.refresh()
 print(project)
 ```
 
-</div>
-<div class="card">
++++
 
 After the training of your models has succeeded, you can retrieve the metrics for each model and test them with the 🤗 Inference API:
 
@@ -124,5 +125,3 @@ Just enter the number of samples and language and you will get an estimate. Plea
 ```bash
 autonlp estimate --num_train_samples 10000 --project_name sentiment_detection
 ```
-
-</div>
