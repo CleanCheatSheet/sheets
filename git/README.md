@@ -1,8 +1,8 @@
 ---
 title: Git
 author: education.github.com
-firstColor: 'hsl(124, 100%, 20%)'
-secondColor: 'hsl(124, 100%, 90%)'
+firstColor: '#23292F'
+secondColor: '#FFFFFF'
 thirdColor: 'hsl(124, 100%, 95%)'
 ---
 
